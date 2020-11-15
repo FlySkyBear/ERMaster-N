@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.insightech.er.feature"
-      label="ERMaster"
-      version="1.0.1.v20191209-1400"
+      label="ERMaster-N"
+      version="1.0.2.v20201116-0204"
       provider-name="Insightech.org"
       plugin="org.insightech.er">
 
@@ -48,7 +48,7 @@ limitations under the License.
    </license>
 
    <url>
-      <update label="ERMaster" url="https://guoweihua1982.github.io/ERMaster-g/org.insightech.er.update/site.xml"/>
+      <update label="ERMaster" url="https://FlySkyBear.github.io/ERMaster-N/org.insightech.er.update/site.xml"/>
    </url>
 
    <requires>
@@ -65,7 +65,7 @@ limitations under the License.
          id="org.insightech.er"
          download-size="0"
          install-size="0"
-         version="1.0.1.v20191209-1400"
+         version="1.0.2.v20201116-0204"
          unpack="false"/>
 
 </feature>

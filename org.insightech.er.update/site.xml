@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <description url="https://github.com/guoweihua1982/ERMaster-g">
+   <description url="https://github.com/FlySkyBear/ERMaster-N">
       update-site at github.io
    </description>
-   <feature url="features/org.insightech.er.feature_1.0.1.v20191209-1400.jar" id="org.insightech.er.feature" version="1.0.1.v20191209-1400">
+   <feature url="features/org.insightech.er.feature_1.0.2.v20201116-0204.jar" id="org.insightech.er.feature" version="1.0.2.v20201116-0204">
       <category name="ermaster"/>
    </feature>
    <category-def name="ermaster" label="ERMaster"/>
