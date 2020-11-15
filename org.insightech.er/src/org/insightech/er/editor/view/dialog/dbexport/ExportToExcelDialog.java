@@ -115,6 +115,8 @@ public class ExportToExcelDialog extends AbstractExportDialog {
 				.getResourceString("label.template.default.en"));
 		this.templateCombo.add(ResourceString
 				.getResourceString("label.template.default.ja"));
+		this.templateCombo.add(ResourceString
+				.getResourceString("label.template.default.zh"));
 
 		List<String> fileNames = PreferenceInitializer
 				.getAllExcelTemplateFiles();

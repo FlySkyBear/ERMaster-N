@@ -29,6 +29,8 @@ public class TemplatePreferencePage extends PreferencePage implements
 
 	private static final String DEFAULT_TEMPLATE_FILE_JA = "template_ja.xls";
 
+	private static final String DEFAULT_TEMPLATE_FILE_ZH = "template_zh.xls";
+	
 	private TemplateFileListEditor fileListEditor;
 
 	public void init(IWorkbench workbench) {
@@ -92,6 +94,20 @@ public class TemplatePreferencePage extends PreferencePage implements
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				download(DEFAULT_TEMPLATE_FILE_JA);
+			}
+		});
+		
+		Button buttonZh = new Button(composite, SWT.NONE);
+		buttonZh.setText(ResourceString
+				.getResourceString("label.button.download.template.zh"));
+		buttonZh.addSelectionListener(new SelectionAdapter() {
+
+			/**
+			 * {@inheritDoc}
+			 */
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				download(DEFAULT_TEMPLATE_FILE_ZH);
 			}
 		});
 
