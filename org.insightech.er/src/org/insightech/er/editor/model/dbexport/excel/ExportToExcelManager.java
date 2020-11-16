@@ -152,6 +152,9 @@ public class ExportToExcelManager extends AbstractExportManager {
 		} else if ("ja".equals(lang)) {
 			return TemplatePreferencePage.getDefaultExcelTemplateJa();
 
+		} else if ("zh".equals(lang)) {
+			return TemplatePreferencePage.getDefaultExcelTemplateZh();
+
 		}
 
 		String templateName = this.exportExcelSetting.getExcelTemplate();

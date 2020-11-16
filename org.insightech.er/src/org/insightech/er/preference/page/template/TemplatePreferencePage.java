@@ -178,4 +178,9 @@ public class TemplatePreferencePage extends PreferencePage implements
 		return TemplatePreferencePage.class.getResourceAsStream("/"
 				+ DEFAULT_TEMPLATE_FILE_JA);
 	}
+
+	public static InputStream getDefaultExcelTemplateZh() {
+		return TemplatePreferencePage.class.getResourceAsStream("/"
+				+ DEFAULT_TEMPLATE_FILE_ZH);
+	}
 }
