@@ -2,7 +2,7 @@
 <feature
       id="org.insightech.er.feature"
       label="ERMaster-N"
-      version="1.0.2.v20201116-0204"
+      version="1.0.2.v20201117-0204"
       provider-name="Insightech.org"
       plugin="org.insightech.er">
 
@@ -62,17 +62,17 @@ limitations under the License.
    </requires>
 
    <plugin
-         id="org.insightech.er"
-         download-size="0"
-         install-size="0"
-         version="1.0.2.v20201116-0204"
-         unpack="false"/>
-
-   <plugin
          id="org.insightech.er.extentions.sample"
          download-size="0"
          install-size="0"
          version="1.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.insightech.er"
+         download-size="0"
+         install-size="0"
+         version="1.0.2.v20201117-0204"
          unpack="false"/>
 
 </feature>
