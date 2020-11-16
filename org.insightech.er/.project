@@ -3,6 +3,7 @@
 	<name>org.insightech.er</name>
 	<comment></comment>
 	<projects>
+		<project>org.insightech.er.ant</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
