@@ -15,5 +15,3 @@
 https://FlySkyBear.github.io/ERMaster-N/org.insightech.er.update/site.xml
 
 
-http://tinyeco.cn:8000/ERMasterUpdateSite/site.xml
-
