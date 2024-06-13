@@ -49,6 +49,7 @@ public class NewDiagramWizard extends Wizard implements INewWizard {
 		return true;
 	}
 
+	@Override
 	public void init(IWorkbench workbench, IStructuredSelection selection) {
 		this.selection = selection;
 		this.workbench = workbench;

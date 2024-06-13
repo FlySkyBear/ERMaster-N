@@ -3,7 +3,7 @@
    <description name="ERMaster update sit" url="https://github.com/FlySkyBear/ERMaster-N">
       update-site at github.io
    </description>
-   <feature url="features/org.insightech.er.feature_1.0.2.v20201117-0204.jar" id="org.insightech.er.feature" version="1.0.2.v20201117-0204" os="linux,macosx,win32" nl="en,ja,zh">
+   <feature url="features/org.insightech.er.feature_1.0.2.v20240613-0205.jar" id="org.insightech.er.feature" version="1.0.2.v20240613-0205">
       <category name="ermaster"/>
    </feature>
    <category-def name="ermaster" label="ERMaster"/>

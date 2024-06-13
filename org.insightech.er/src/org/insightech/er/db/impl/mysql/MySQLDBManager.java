@@ -28,6 +28,7 @@ public class MySQLDBManager extends DBManagerBase {
 	private static final ResourceBundle CHARACTER_SET_RESOURCE = ResourceBundle
 			.getBundle("mysql_characterset");
 
+	@Override
 	public String getId() {
 		return ID;
 	}
@@ -48,14 +49,17 @@ public class MySQLDBManager extends DBManagerBase {
 		return "jdbc:mysql://<SERVER NAME>:<PORT>/<DB NAME>";
 	}
 
+	@Override
 	public int getDefaultPort() {
 		return 3306;
 	}
 
+	@Override
 	public SqlTypeManager getSqlTypeManager() {
 		return new MySQLSqlTypeManager();
 	}
 
+	@Override
 	public TableProperties createTableProperties(TableProperties tableProperties) {
 		if (tableProperties != null
 				&& tableProperties instanceof MySQLTableProperties) {
@@ -65,11 +69,13 @@ public class MySQLDBManager extends DBManagerBase {
 		return new MySQLTableProperties();
 	}
 
+	@Override
 	public DDLCreator getDDLCreator(ERDiagram diagram, Category targetCategory,
 			boolean semicolon) {
 		return new MySQLDDLCreator(diagram, targetCategory, semicolon);
 	}
 
+	@Override
 	public List<String> getIndexTypeList(ERTable table) {
 		List<String> list = new ArrayList<String>();
 
@@ -85,22 +91,27 @@ public class MySQLDBManager extends DBManagerBase {
 				SUPPORT_FULLTEXT_INDEX, SUPPORT_SCHEMA };
 	}
 
+	@Override
 	public ImportFromDBManager getTableImportManager() {
 		return new MySQLTableImportManager();
 	}
 
+	@Override
 	public PreImportFromDBManager getPreTableImportManager() {
 		return new MySQLPreTableImportManager();
 	}
 
+	@Override
 	public PreTableExportManager getPreTableExportManager() {
 		return new MySQLPreTableExportManager();
 	}
 
+	@Override
 	public TablespaceProperties createTablespaceProperties() {
 		return new MySQLTablespaceProperties();
 	}
 
+	@Override
 	public TablespaceProperties checkTablespaceProperties(
 			TablespaceProperties tablespaceProperties) {
 
@@ -111,10 +122,12 @@ public class MySQLDBManager extends DBManagerBase {
 		return tablespaceProperties;
 	}
 
+	@Override
 	public String[] getCurrentTimeValue() {
 		return new String[] { "NOW(), SYSDATE()" };
 	}
 
+	@Override
 	public BigDecimal getSequenceMaxValue() {
 		return null;
 	}

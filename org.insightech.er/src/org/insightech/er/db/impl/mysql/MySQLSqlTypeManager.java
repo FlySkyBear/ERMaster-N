@@ -5,6 +5,7 @@ import org.insightech.er.db.sqltype.SqlTypeManagerBase;
 
 public class MySQLSqlTypeManager extends SqlTypeManagerBase {
 
+	@Override
 	public int getByteLength(SqlType type, Integer length, Integer decimal) {
 		return 0;
 	}

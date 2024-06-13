@@ -27,6 +27,7 @@ public class NewDiagramWizardPage2 extends WizardPage {
 				.getResourceString("wizard.new.diagram.title"));
 	}
 
+	@Override
 	public void createControl(Composite parent) {
 		Composite composite = new Composite(parent, SWT.NULL);
 
